@@ -6,8 +6,8 @@
  * @flow strict-local
  */
 
+import type { Node } from 'react';
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -15,16 +15,16 @@ import {
   StyleSheet,
   Text,
   useColorScheme,
-  View,
+  View
 } from 'react-native';
-
 import {
   Colors,
   DebugInstructions,
   Header,
   LearnMoreLinks,
-  ReloadInstructions,
+  ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen';
+
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
