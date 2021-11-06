@@ -9,7 +9,14 @@ const HomeScreen = () => {
     <SafeAreaView>
       <StatusBar />
       <View>
-        <Text>Home View</Text>
+        <Text>
+          Home View
+          かかかか55
+        </Text>
+        <Text>
+          あいうえお
+          かきくけこ
+        </Text>
       </View>
     </SafeAreaView>
   );
