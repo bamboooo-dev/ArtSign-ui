@@ -15,6 +15,7 @@ const HomeScreen = () => {
         </Text>
         <Text>
           あいうえお
+          かきくけこ
         </Text>
       </View>
     </SafeAreaView>
