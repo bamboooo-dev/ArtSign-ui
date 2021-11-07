@@ -10,6 +10,7 @@ const HomeScreen = () => {
       <StatusBar />
       <View>
         <Text>Home View</Text>
+        <Text> Takoyarou 担当</Text>
       </View>
     </SafeAreaView>
   );
