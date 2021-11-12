@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 const HomeScreen = () => {
-  constructor(props){
+  /*constructor(props){
     super(props);
     this.state = {tab: "hot"};
   }
@@ -27,31 +27,47 @@ const HomeScreen = () => {
     else{
       
     }
-  };
+  };*/
   return (
     <SafeAreaView>
       <StatusBar />
       <View style={styles.switchingTab}>
-        <Text style={styles.selectedButton}>
-          急上昇
-        </Text>
-        <Text style={styles.notSelectedButton}>
-          あなたへのおすすめ
-        </Text>
+        <TouchableOpacity>
+          <Text style={styles.selectedButton}>
+            急上昇
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text style={styles.notSelectedButton}>
+            あなたへのおすすめ
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View style={styles.switchingTab}>
+
       </View>
     </SafeAreaView>
   );
 };
 
+const rad = 10;
+
 const colors = {
   white: '#ffffff',
   gray: '#696969',
   lightGray: '#aaaaaa',
+  black: '#000000',
 }
 
 const padds = {
-  percent: '5%'
-}
+  hori: '4%',
+  vert: '1%',
+};
+
+const margs = {
+  hori: '1%',
+  vert: '2%',
+};
 
 const styles = StyleSheet.create({
   switchingTab: {
@@ -59,19 +75,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   selectedButton: {
-    paddingHorizontal: padds.percent,
-    marginRight: '3%',
+    marginHorizontal: margs.hori,
+    marginVertical: margs.vert,
+    paddingVertical: padds.vert,
+    paddingHorizontal: padds.hori,
     backgroundColor: colors.gray,
     color: colors.white,
-    borderRadius: 10,
-    fontSize: 25,
+    borderRadius: rad,
+    fontSize: 26,
   },
   notSelectedButton: {
-    paddingHorizontal: padds.percent,
+    marginHorizontal: margs.hori,
+    marginVertical: margs.vert,
+    paddingVertical: padds.vert,
+    paddingHorizontal: padds.hori,
     backgroundColor: colors.white,
     color: colors.lightGray,
-    borderRadius: 10,
-    fontSize: 25,
+    borderRadius: rad,
+    fontSize: 26,
   },
 });
 export default HomeScreen;
