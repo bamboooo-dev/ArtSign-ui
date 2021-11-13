@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar, Text, View
-} from 'react-native';
+import {SafeAreaView, StatusBar, Text, View} from 'react-native';
 
 const HomeScreen = () => {
   return (

@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  Text,
-  View
-} from 'react-native';
+import {SafeAreaView, StatusBar, Text, View} from 'react-native';
 
 const TreasureScreen = () => {
   return (
@@ -14,7 +9,7 @@ const TreasureScreen = () => {
         <Text>Treasure View</Text>
       </View>
     </SafeAreaView>
-  )
+  );
 };
 
 export default TreasureScreen;
