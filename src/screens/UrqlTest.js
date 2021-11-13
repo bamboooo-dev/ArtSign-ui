@@ -12,7 +12,7 @@ const RepositoryNameQuery = `
 `;
 
 const Name = () => {
-  const [result, reexecuteQuery] = useQuery({
+  const [result] = useQuery({
     query: RepositoryNameQuery,
   });
 
