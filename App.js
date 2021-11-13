@@ -12,6 +12,7 @@ import React from 'react';
 import CommunityScreen from './src/screens/Community';
 import HomeScreen from './src/screens/Home';
 import TreasureScreen from './src/screens/Treasure';
+import ExploreScreen from './src/screens/Explore';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,6 +31,10 @@ const App = () => {
         <Tab.Screen
           name="Treasure"
           component={TreasureScreen}
+        />
+        <Tab.Screen
+          name="Explore"
+          component={ExploreScreen}
         />
       </Tab.Navigator>
     </NavigationContainer>
