@@ -64,7 +64,7 @@ workflows:
           project_path: ios/CultureHunt.xcodeproj
           device: 'iPhone 12 Pro Max'
           build_configuration: Release
-          yarn_cache_folder: ~/.cache/yarn
+          homebrew_cache: false
           scheme: CultureHunt
           requires:
             - analyse_js
@@ -74,7 +74,7 @@ workflows:
           project_path: 'ios/CultureHunt.xcodeproj'
           device: 'iPhone 12 Pro Max'
           build_configuration: 'Release'
-          yarn_cache_folder: ~/.cache/yarn
+          homebrew_cache: false
           scheme: 'CultureHunt'
           detox_configuration: 'ios.sim.release'
           requires:
