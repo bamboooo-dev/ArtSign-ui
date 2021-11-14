@@ -62,7 +62,7 @@ workflows:
       - rn/ios_build:
           name: build_ios_release
           project_path: ios/CultureHunt.xcodeproj
-          device: 'iPhone X'
+          device: 'iPhone 12 Pro Max'
           build_configuration: Release
           scheme: CultureHunt
           requires:
@@ -71,7 +71,7 @@ workflows:
       # Build and test the iOS app in release mode
       - rn/ios_build_and_test:
           project_path: 'ios/CultureHunt.xcodeproj'
-          device: 'iPhone X'
+          device: 'iPhone 12 Pro Max'
           build_configuration: 'Release'
           scheme: 'CultureHunt'
           detox_configuration: 'ios.sim.release'
